@@ -31,11 +31,31 @@ code {
 
 .calculator {
   width: 25%;
-  height: 52%;
-  background-color: #FC8D76;
+  height: 55%;
   padding: 5px;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.calculatorLightMode {
+  background-color: #FC8D76;
+}
+
+.calculatorDarkMode {
+  background-color: #3F3131;
+}
+
+.toggleButton {
+  float: right;
+  font-weight: bolder;
+  margin-right: 9px;
+  height: 20px;
+  width: 40px;
+  background-color: #F65353;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-style: italic;
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -43,12 +63,20 @@ input[type="text"] {
   display: flex;
   width: 90%;
   padding-right: 8px;
-  margin: 8px auto;
+  margin: 25px auto 15px;
   height: 65px;
   font-weight: 700;
-  background-color: #BCBABA;
   border: 1px solid black;
   font-size: large;
+}
+
+.inputLightMode {
+  background-color: #BCBABA;
+}
+
+.inputDarkMode {
+  background-color: #786060;
+  color: #fff;
 }
 
 .box {
@@ -58,7 +86,7 @@ input[type="text"] {
 }
 
 .boxMargin {
-  margin-top: 18px;
+  margin-top: 2px;
 }
 
 .content, .content-box {
@@ -67,13 +95,21 @@ input[type="text"] {
   height: 50px;
   border-radius: 5px;
   margin: 5px;
-  background-color: #FCB0A0;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
 }
 
-.calculator, .content, .content-box {
+.contentLightMode {
+  background-color: #FCB0A0;
+}
+
+.contentDarkMode {
+  background-color: #544242;
+  color: #fff;
+}
+
+.calculator, .content, .content-box, .toggleButton {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
